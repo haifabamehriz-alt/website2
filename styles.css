@@ -1,0 +1,28 @@
+*{box-sizing:border-box} html,body{margin:0}
+body{font-family:system-ui,Arial,sans-serif; color:#222; background:#fff}
+
+/* header */
+.top{padding:28px 16px; text-align:center; background:linear-gradient(180deg,#ffe6f2,#ffffff)}
+.top h1{margin:0 0 6px}
+.brand{color:#ff4da6; font-weight:700}
+.tag{color:#666; margin:0}
+
+/* layout */
+main{max-width:900px; margin:20px auto; padding:0 16px; display:grid; gap:16px}
+
+/* card */
+.card{background:#fff; border:1px solid #eee; border-radius:14px; padding:16px; box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.pills{list-style:none; display:flex; gap:8px; padding:0; margin:0; flex-wrap:wrap}
+.pills li{background:#f5f5f5; border-radius:999px; padding:6px 10px; font-size:13px}
+
+/* footer */
+.foot{margin-top:24px; padding:20px; text-align:center; background:#f7f7f7}
+.foot a{color:#333; text-decoration:none; margin:0 6px}
+.foot a:hover{text-decoration:underline}
+
+/* bigger screens */
+@media (min-width: 800px){
+  .top{padding:60px 16px}
+  main{grid-template-columns:1fr 1fr; }
+  main .card:first-of-type{grid-column:1/-1}
+}
